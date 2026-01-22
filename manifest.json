@@ -1,0 +1,30 @@
+{
+  "manifest_version": 2,
+  "name": "AliTaxCalc",
+  "version": "1.0",
+  "description": "shows approximate tax for chilean purchases in aliexpress",
+  "icons": {
+    "48": "icons/border-48.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.aliexpress.com/p/shoppingcart/*",
+        "*://*.aliexpress.ru/p/shoppingcart/*"
+      ],
+      "js": [
+        "main.js"
+      ]
+    }
+  ],
+  "browser_specific_settings": {
+    "gecko": {
+      "data_collection_permissions": {
+        "required": [
+          "websiteContent"
+        ]
+      },
+      "id": "shironeko@alitaxcalc"
+    }
+  }
+}
