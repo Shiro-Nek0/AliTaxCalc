@@ -10,11 +10,14 @@
     {
       "matches": [
         "*://*.aliexpress.com/p/shoppingcart/*",
-        "*://*.aliexpress.ru/p/shoppingcart/*"
+        "*://*.aliexpress.com/item/*",
+        "*://*.aliexpress.ru/p/shoppingcart/*",
+        "*://*.aliexpress.ru/item/*"
       ],
       "js": [
         "main.js"
-      ]
+      ],
+      "run_at": "document_end"
     }
   ],
   "browser_specific_settings": {
