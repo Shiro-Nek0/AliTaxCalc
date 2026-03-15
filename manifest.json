@@ -1,8 +1,8 @@
 {
   "manifest_version": 2,
   "name": "AliTaxCalc",
-  "version": "1.2",
-  "description": "shows approximate tax for chilean purchases in aliexpress",
+  "version": "1.4",
+  "description": "shows approximate tax for chilean purchases in aliexpress + some useful tweaks",
   "icons": {
     "48": "icons/border-48.png"
   },
@@ -11,8 +11,10 @@
       "matches": [
         "*://*.aliexpress.com/p/shoppingcart/*",
         "*://*.aliexpress.com/item/*",
+        "*://*.aliexpress.com/w/*",
         "*://*.aliexpress.ru/p/shoppingcart/*",
-        "*://*.aliexpress.ru/item/*"
+        "*://*.aliexpress.ru/item/*",
+        "*://*.aliexpress.ru/w/*"
       ],
       "js": [
         "main.js"
